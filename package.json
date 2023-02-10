@@ -1,0 +1,21 @@
+{
+  "name": "@grenoble-hands-on/root",
+  "private": true,
+  "devDependencies": {
+    "jest": "^27.4.5",
+    "lerna": "^3.22.1",
+    "typescript": "^4.5.4"
+  },
+  "scripts": {
+    "postinstall": "lerna bootstrap",
+    "test": "jest",
+    "angular": "npm start --prefix packages/infrastructure/web/angular",
+    "react": "npm start --prefix packages/infrastructure/web/react",
+    "landing": "npm start --prefix packages/infrastructure/web/landing",
+    "vuejs": "npm start --prefix packages/infrastructure/web/vuejs"
+  },
+  "dependencies": {
+    "install": "^0.13.0",
+    "npm": "^9.4.1"
+  }
+}

@@ -1,0 +1,94 @@
+@import 'normalize.css';
+
+:root {
+  --font-family: 'Inter';
+  --white-color: #fff;
+  --black-color: #000;
+  --text-color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  color: var(--text-color);
+  overflow-y: overlay;
+}
+
+html *::-webkit-scrollbar {
+  border-radius: 0;
+  width: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+html *::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+input,
+[tabindex] {
+  outline: none;
+  border: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+/* Inter Font */
+@font-face {
+  font-family: Inter;
+  src: url('../fonts/Inter/Inter-ExtraLight.ttf');
+  font-size: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url('../fonts/Inter/Inter-Light.ttf');
+  font-size: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url('../fonts/Inter/Inter-Regular.ttf');
+  font-size: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url('../fonts/Inter/Inter-Medium.ttf');
+  font-size: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url('../fonts/Inter/Inter-SemiBold.ttf');
+  font-size: normal;
+  font-weight: 600;
+}
